@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>首页 - 我的博客</title>
+    <meta name="keywords" content="我的博客"/>
+    <meta name="description" content="我的博客简介。"/>
+    <link href="assets/styles/global.css" rel="stylesheet" type="text/css"> <!-- 引入全局css -->
+    <link href="assets/styles/index.css" rel="stylesheet" type="text/css"> <!-- 引入当前页面css -->
+  </head>
+  <body>
+    <!-- 一般性的代码规范里，一般不使用id做样式控制，样式控制都是用class来实现 -->
+    <div class="layout">
+      <div class="left">
+        <div class="userinfo">
+          <span class="char">w</span>
+        </div>
+        <!-- 左侧菜单：开始 -->
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="icon icon-book"></i>
+                <span>文集</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon icon-doc"></i>
+                <span>文档</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon icon-commit"></i>
+                <span>评论</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon icon-setting"></i>
+                <span>设置</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- 左侧菜单：结束 -->
+      </div>
+      <div class="center">
+        <!-- 中间标题：开始 -->
+        <div class="center-title">
+          <div class="inner">
+            <i class="icon icon-book-1"></i>
+            <h1>前端学习笔记</h1>
+            <button><i class="icon icon-search"></i></button>
+          </div>
+        </div>
+        <!-- 中间标题：结束 -->
+        <!-- 中间菜单：开始 -->
+        <nav class="sub-nav">
+          <ul>
+            <!-- normal current组合控制第一个菜单的颜色 -->
+            <li class="normal current"><a href="list.html"><strong>html</strong><span class="num">20</span></a></li>
+            <li class="normal"><a href="list.html"><strong>css</strong><span class="num">12</span></a></li>
+            <li class="normal"><a href="list.html"><strong>javascript</strong><span class="num">3</span></a></li>
+            <li class="normal"><a href="list.html"><strong>vue</strong><span class="num">0</span></a></li>
+            <li class="normal"><a href="list.html"><strong>react</strong><span class="num">6</span></a></li>
+            <li class="normal"><a href="list.html"><strong>webpack</strong><span class="num">34</span></a></li>
+            <li class="normal"><a href="list.html"><strong>nodejs</strong><span class="num">21</span></a></li>
+          </ul>
+        </nav>
+        <!-- 中间菜单：结束 -->
+        <!-- 版权：开始 -->
+        <div class="copy">
+          Copyright &copy; totonoo.com
+        </div>
+        <!-- 版权：结束 -->
+      </div>
+      <div class="right">
+        <!-- 首页：开始 -->
+        <div class="index-main">
+
+          <!-- item：开始 -->
+          <div class="item">
+            <h2>
+              <strong>html</strong>
+              <a href="list.html">更多</a>
+            </h2>
+            <div class="item-list">
+              <ul>
+                <li><a href="article.html" title="LaTeX数学公式语法大全">LaTeX数学公式语法大全</a><span class="date">2020-06-05</span></li>
+                <li><a href="article.html" title="CSS动画是可以暂停的">CSS动画是可以暂停的</a><span class="date">2020-04-04</span></li>
+                <li><a href="article.html" title="chrome translation闪烁BUG">chrome translation闪烁BUG</a><span class="date">2020-03-15</span></li>
+                <li><a href="article.html" title="canvas小tip-下载二维码、图片加水印">canvas小tip-下载二维码、图片加水印</a><span class="date">2020-03-08</span></li>
+                <!-- 设计稿上，如果标题过长用 ... 代替，所以需要用title属性来显示全文，鼠标移到连接上看效果 -->
+                <li><a href="article.html" title="巧用CSS3的calc()宽度计算做响应模式布局，长长长">巧用CSS3的calc()宽度计算做响应模式布局，长长长</a><span class="date">2020-02-10</span></li>
+              </ul>
+            </div>
+          </div>
+          <!-- item：结束 -->
+
+          <div class="item">
+            <h2>
+              <strong>CSS</strong>
+              <a href="list.html">更多</a>
+            </h2>
+            <div class="item-list">
+              <ul>
+                <li><a href="article.html" title="LaTeX数学公式语法大全">LaTeX数学公式语法大全</a><span class="date">2020-06-05</span></li>
+                <li><a href="article.html" title="CSS动画是可以暂停的">CSS动画是可以暂停的</a><span class="date">2020-04-04</span></li>
+                <li><a href="article.html" title="chrome translation闪烁BUG">chrome translation闪烁BUG</a><span class="date">2020-03-15</span></li>
+                <li><a href="article.html" title="canvas小tip-下载二维码、图片加水印">canvas小tip-下载二维码、图片加水印</a><span class="date">2020-03-08</span></li>
+                <!-- 设计稿上，如果标题过长用 ... 代替，所以需要用title属性来显示全文，鼠标移到连接上看效果 -->
+                <li><a href="article.html" title="巧用CSS3的calc()宽度计算做响应模式布局，长长长">巧用CSS3的calc()宽度计算做响应模式布局，长长长</a><span class="date">2020-02-10</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <h2>
+              <strong>JAVASCRIPT</strong>
+              <a href="list.html">更多</a>
+            </h2>
+            <div class="item-list">
+              <ul>
+                <li><a href="article.html" title="LaTeX数学公式语法大全">LaTeX数学公式语法大全</a><span class="date">2020-06-05</span></li>
+                <li><a href="article.html" title="CSS动画是可以暂停的">CSS动画是可以暂停的</a><span class="date">2020-04-04</span></li>
+                <li><a href="article.html" title="chrome translation闪烁BUG">chrome translation闪烁BUG</a><span class="date">2020-03-15</span></li>
+                <li><a href="article.html" title="canvas小tip-下载二维码、图片加水印">canvas小tip-下载二维码、图片加水印</a><span class="date">2020-03-08</span></li>
+                <!-- 设计稿上，如果标题过长用 ... 代替，所以需要用title属性来显示全文，鼠标移到连接上看效果 -->
+                <li><a href="article.html" title="巧用CSS3的calc()宽度计算做响应模式布局，长长长">巧用CSS3的calc()宽度计算做响应模式布局，长长长</a><span class="date">2020-02-10</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 当没有数据的时候用这种样式展示 -->
+          <div class="item">
+            <h2>
+              <strong>VUE</strong>
+            </h2>
+            <div class="item-list">
+              <ul>
+                <li class="empty">暂无数据</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- 首页：结束 -->
+      </div>
+    </div>
+  </body>
+</html>

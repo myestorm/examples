@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.list-main {
+  padding: 30px;
+}
+.list-main h1 {
+  font-size: 18px;
+  color: #666666;
+  border-bottom: 1px #e6ecf1 solid;
+  padding: 0 15px 10px;
+}
+
+.list-content .item {
+  border-bottom: 1px #e6ecf1 solid;
+  padding: 15px;
+  transition: all 200ms;
+}
+.list-content .item:hover {
+  background-color: #f5f5f5;
+}
+.list-content .item h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.list-content .item p {
+  font-size: 14px;
+  color: #999999;
+}
+.list-content .item p a {
+  text-decoration: underline;
+}
+
+.pager ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.pager ul li {
+  padding: 0 15px;
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.index-main {
+  padding: 30px; /* 内容和边框之间的空白 */
+  display: grid; /* 网格布局 */
+  grid-gap: 30px; /* 网格间隙 */
+  grid-template-columns: 50% 50%; /* 一排放俩 */
+  margin-right: 30px; /* 边框与边框之间的空白 */
+}
+
+.index-main .item {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* 阴影 */
+  border: 1px rgb(220, 220, 220) solid; /* 线框 */
+  box-sizing: border-box; /* 设置盒子模式 */
+}
+.index-main .item h2 {
+  border-bottom: 1px rgb(220, 220, 220) solid; /* 下方线条 */
+  line-height: 52px; /* 文本行高 */
+  padding: 0 30px;
+  display: flex;
+  font-weight: normal; /* 去掉加粗 */
+}
+.index-main .item h2 strong {
+  flex: 1;
+  text-transform: uppercase; /* 设置文字大写 */
+  font-size: 18px;
+}
+.index-main .item h2 a {
+  font-size: 16px;
+}
+/* 添加更多前面的 + 放在css里面，便于统一控制 */
+.index-main .item h2 a::before {
+  content: "+";
+}
+.index-main .item-list {
+  padding: 30px;
+}
+/* li的布局 */
+.index-main .item-list li {
+  display: flex;
+}
+/* 链接 */
+.index-main .item-list li a {
+  flex: 1;
+  overflow: hidden; /* 溢出隐藏 */
+  text-overflow: ellipsis; /* 隐藏的文字用 ...代替 */
+  white-space: nowrap; /* 文字不换行，一般这3个属性是一套效果，缺一不可 */
+}
+/* 日期 */
+.index-main .item-list li .date {
+  font-size: 14px;
+  color: #cccccc;
+  padding-left: 15px;
+}
+
+/* 空样式覆盖默认的li的样式 */
+.index-main .item-list .empty {
+  width: 100%;
+  font-size: 14px;
+  color: #cccccc;
+  justify-content: center;
+}

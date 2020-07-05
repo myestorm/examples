@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/* reset 开始 */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "微软雅黑", "STHeiti", SimSun, sans-serif; /* 设置字体 */
+  color: #666666; /* 设置全局文字颜色 */
+  line-height: 180%; /* 设置文字行高 */
+}
+
+/* 设置链接文本 */
+/* 默认状态 */
+a {
+  color: #26b192;
+  text-decoration: none;
+  transition: color 300ms; /* 设置连接的交互动画 */
+}
+/* 默认状态 访问过的状态 */
+a:link, a:visited {
+  color: #26b192;
+  text-decoration: none
+}
+/* 移上的状态 */
+a:hover {
+  color: #015845;
+}
+/* 按下的状态 */
+a:active {
+  color: #015845
+}
+
+/* 去掉链接图片的边框 */
+img {
+  border: 0;
+}
+
+/* 重置下列元素 */
+ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 重置表单元素 */
+input, select, button, textarea {
+  font-family: "Open Sans",Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑","STHeiti",SimSun,sans-serif;
+  color: #666666;
+}
+
+input::placeholder, select::placeholder, button::placeholder, textarea::placeholder {
+  color: #999999
+}
+
+/* reset 结束 */
+
+/* css颜色的表示方式有 #ffffff：白色 rgb(255, 255, 255)：白色 rgba(255,255,255, 0.6)：白色带0.6的透明度 */
+
+/* 布局 */
+.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.left {
+  width: 72px;
+  background-color: #26b192;
+}
+.center {
+  width: 489px;
+  border-right: 1px #e6ecf1 solid;
+  background-color: #f5f7f9;
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  flex: 1; /* 除去left和center的宽度，剩余部分全部分给right */
+  height: 100%;
+  overflow: auto; /* 自动显示滚动条，若内容的宽度和高度超过了元素的宽度和高度则显示滚动条，否则不显示 overflow-x 为横向，overflow-y 为纵向*/
+}
+
+.userinfo {
+  padding: 15px;
+}
+.userinfo .char {
+  width: 42px; /* 元素宽度 */
+  height: 42px; /* 元素宽高度 */
+  display: block; /* 内联元素转换成块级元素 */
+  border-radius: 100%; /* 圆角 如果宽和高相等 100% 表示圆形，不相等则是椭圆 */
+  background-color: #e4e4e4; /* 背景颜色 */
+  text-transform: uppercase; /* 文本大写 */
+  color: #26b192; /* 文本颜色 */
+  font-size: 18px; /* 文本大小 */
+  text-align: center; /* 对齐方式：居中 */
+  line-height: 42px; /* 文本行高 */
+}
+
+.main-nav {
+  padding-top: 10px;
+}
+
+.main-nav a {
+  display: block; /* 内联元素转换成块级元素，独占一行 */
+  color: #e4e4e4; /* 文本颜色 */
+  text-align: center; /* 对齐方式：居中 */
+  transition: all 300ms; /* 状态切换时，动画效果 */
+  padding: 10px 0;
+}
+.main-nav a:hover {
+  background-color: rgba(0,0,0, 0.24);
+}
+.main-nav a span {
+  display: block;
+}
+
+/* 雪碧图做图标 */
+.icon {
+  width: 36px;
+  height: 36px;
+  background-image: url(../images/icon.png); /* 背景图片 */
+  background-repeat: no-repeat; /* 背景的平铺方式：不平铺 */
+  display: inline-block; /* 保留内联元素和块级元素的特点 */
+}
+.icon-book {
+  background-position: -18px -18px; /* 定位背景：以背景图的左上为原点，设置x轴，y轴的距离 */
+}
+.icon-doc {
+  background-position: -90px -18px;
+}
+.icon-commit {
+  background-position: -162px -18px;
+}
+.icon-setting {
+  background-position: -234px -18px;
+}
+.icon-book-1 {
+  background-position: -306px -18px;
+}
+.icon-search {
+  background-position: -378px -18px;
+}
+
+.sub-nav {
+  flex: 1;
+  padding: 30px 0 30px 160px;
+}
+.sub-nav .normal {
+  border-bottom: 1px #e6ecf1 solid;
+}
+.sub-nav .normal a {
+  display: block;
+  line-height: 46px;
+  display: flex;
+  text-transform: uppercase;
+  color: #666666;
+}
+.sub-nav .normal a:hover {
+  background-color: rgba(0,0,0, 0.04); /* 鼠标移上去时的样式 */
+}
+.sub-nav .normal strong {
+  flex: 1;
+  font-weight: normal;
+  padding-left: 5px;
+}
+.sub-nav .normal .num {
+  font-size: 14px;
+  color: #cccccc;
+  padding: 0 30px;
+}
+.sub-nav .current a {
+  color: #26b192;
+}
+
+.center-title {
+  padding-left: 160px;
+}
+.center-title .icon-book-1 {
+  width: 52px;
+  height: 52px;
+  background-color: #26b192;
+  border-radius: 4px;
+  background-position: -294px -12px;
+  margin-left: 5px;
+}
+.center-title .inner {
+  border-bottom: 1px #e6ecf1 solid;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+.center-title h1 {
+  flex: 1;
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 15px;
+}
+.center-title button {
+  border: 0;
+  background: no-repeat;
+  cursor: pointer;
+  padding: 0 30px;
+}
+
+.copy {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 0;
+  color: #999999;
+}

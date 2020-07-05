@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.article-main {
+  padding: 30px;
+}
+.article-main h1 {
+  color: #26b192;
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.article-main .info {
+  border-top: 1px #e6ecf1 solid;
+  border-bottom: 1px #e6ecf1 solid;
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+}
+
+.article-main .content {
+  font-size: 16px;
+}
